@@ -1,0 +1,22 @@
+{
+  "name": "plantoken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Planport/Planport-presale.git"
+  },
+  "scripts": {
+    "build": "node compile.js",
+    "deploy": "node deploy.js"
+  },
+  "author": "Leonardo Gedler",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^5.0.0",
+    "solc": "^0.4.20",
+    "truffle-hdwallet-provider": "0.0.3",
+    "web3": "^1.0.0-beta.26"
+  }
+}
