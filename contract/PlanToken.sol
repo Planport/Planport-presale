@@ -5,7 +5,7 @@ pragma solidity ^0.4.18;
 //
 // Symbol      : PLAN
 // Name        : PlanToken
-// Total supply: 1,000,000.000000000000000000
+// Total supply: 500,000,000.000000000000000000
 // Decimals    : 18
 //
 //
@@ -114,7 +114,7 @@ contract PlanToken is ERC20Interface, Owned {
         symbol = "PLAN";
         name = "PlanToken";
         decimals = 18;
-        _totalSupply = 1000000 * 10**uint(decimals);
+        _totalSupply = 500000000 * 10**uint(decimals);
         balances[owner] = _totalSupply;
         emit Transfer(address(0), owner, _totalSupply);
     }
