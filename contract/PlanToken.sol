@@ -1,7 +1,7 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// 'PlanToken' Fixed Supply Token token contract
+// 'PlanToken' Fixed Supply Token Contract
 //
 // Symbol      : PLAN
 // Name        : PlanToken
