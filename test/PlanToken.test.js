@@ -60,7 +60,23 @@ describe('PlanToken', () => {
 
         const newOwner = await planToken.methods.owner().call();
         assert.equal(accounts[1], newOwner);
+    });
 
-    })
+    it('can tranfer ownership', async()=>{
+
+        const transferOwnership = await planToken.methods.transferOwnership(accounts[1]).send({
+            from: accounts[0],
+            gas: '1000000'
+        });
+
+        const acceptOwnership = await planToken.methods.acceptOwnership().send({
+            from: accounts[1],
+            gas: '1000000'
+        });
+
+        const newOwner = await planToken.methods.owner().call();
+        assert.equal(accounts[1], newOwner);
+
+    });
     
 })
