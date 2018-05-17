@@ -5,7 +5,7 @@ const fs = require('fs-extra');
 const buildPath = path.resolve(__dirname, 'build');
 fs.removeSync(buildPath);
 
-const tokenPath = path.resolve(__dirname, 'contract', 'PlanToken.sol');
+const tokenPath = path.resolve(__dirname, 'contract', 'PortToken.sol');
 const source = fs.readFileSync(tokenPath, 'utf8');
 const output = solc.compile(source, 1).contracts;
 

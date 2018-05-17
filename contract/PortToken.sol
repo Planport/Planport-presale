@@ -1,10 +1,10 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// 'PlanToken' Fixed Supply Token Contract
+// '$PORTtoken' Fixed Supply Token Contract
 //
-// Symbol      : PLAN
-// Name        : PlanToken
+// Symbol      : $PORT
+// Name        : $PORT token
 // Total supply: 500,000,000.000000000000000000
 // Decimals    : 18
 //
@@ -95,7 +95,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and an
 // initial fixed supply
 // ----------------------------------------------------------------------------
-contract PlanToken is ERC20Interface, Owned {
+contract PortToken is ERC20Interface, Owned {
     using SafeMath for uint;
 
     string public symbol;
@@ -110,9 +110,9 @@ contract PlanToken is ERC20Interface, Owned {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function PlanToken() public {
-        symbol = "PLAN";
-        name = "PlanToken";
+    function PortToken() public {
+        symbol = "$PORT";
+        name = "$PORT token";
         decimals = 18;
         _totalSupply = 500000000 * 10**uint(decimals);
         balances[owner] = _totalSupply;
